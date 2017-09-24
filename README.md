@@ -4,7 +4,7 @@ Tiny "automatic" fuzzer for chromium using puppeteer. [WIP]
 #### TL;DR
 [Domato](https://github.com/google/domato) generates fuzz files.        
 [Puppeteer]() running in headless mode for testing.          
-Make sure that you've downloaded [Chromium with ASAN](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html)
+Make sure that you've downloaded [Chromium with ASAN](https://commondatastorage.googleapis.com/chromium-browser-asan/index.html) in  `asan-mac-release` folder.
 
 ### How?
 1. Generate fuzz files with `domato`.

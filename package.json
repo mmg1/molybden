@@ -1,0 +1,28 @@
+{
+  "name": "molybden",
+  "version": "1.0.0",
+  "description": "Tiny fuzzer for chrome using puppeteer. [WIP]",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src",
+    "generate": "python ./domato/generator.py  --output_dir ./domato/dist2 --no_of_files 100000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Metnew/molybden.git"
+  },
+  "keywords": [
+    "fuzzer"
+  ],
+  "author": "Vladimir Metnew <vladimirmetnew@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Metnew/molybden/issues"
+  },
+  "homepage": "https://github.com/Metnew/molybden#readme",
+  "dependencies": {
+    "glob": "^7.1.2",
+    "puppeteer": "^0.11.0",
+    "serve": "^6.1.0"
+  }
+}

@@ -58,5 +58,5 @@ typings/
 .env
 
 
-domato/dist
+dist
 asan-mac-release

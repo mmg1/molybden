@@ -4,8 +4,8 @@
   "description": "Tiny fuzzer for chrome using puppeteer. [WIP]",
   "main": "index.js",
   "scripts": {
-    "start": "node ./src",
-    "generate": "python ./domato/generator.py  --output_dir ./domato/dist2 --no_of_files 100000"
+    "start": "node ./src ${DOMATO_DIR:=./dist}",
+    "generate": "python ./domato/generator.py  --output_dir ${DOMATO_DIR:=./dist} --no_of_files ${DOMATO_NUM_FILES:=100}"
   },
   "repository": {
     "type": "git",

@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+
+domato/dist
+asan-mac-release

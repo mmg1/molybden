@@ -15,7 +15,7 @@ const fuzzFiles = glob(`${testFilesPath}/*.html`).sort((a, b) => a - b)
 	// path to Chromium asan build
 	// You can download chromium with asan at:
 	// https://commondatastorage.googleapis.com/chromium-browser-asan/index.html
-	const executablePath = `../asan-mac-release`
+	const executablePath = path.join(__dirname, `../asan-mac-release/Chromium.app/Contents/MacOS/Chromium`)
 	const launchOptions = {
 		// headless: false,
 		// slowMo: 250

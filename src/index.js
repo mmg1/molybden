@@ -4,7 +4,7 @@ const glob = require('glob').sync
 const path = require('path')
 const serve = require('serve')
 const port = process.env.PORT || 5000
-const testFilesPath = process.env.DOMATO_DIR || './domato/dist'
+const testFilesPath = process.env.DOMATO_DIR
 const servePath = path.join(__dirname, '../', testFilesPath)
 // run server
 const server = serve(servePath, {
@@ -15,7 +15,8 @@ const fuzzFiles = glob(`${testFilesPath}/*.html`).sort((a, b) => a - b)
 	// path to Chromium asan build
 	// You can download chromium with asan at:
 	// https://commondatastorage.googleapis.com/chromium-browser-asan/index.html
-	const executablePath = path.join(__dirname, `../asan-mac-release/Chromium.app/Contents/MacOS/Chromium`)
+	const pathToChromeWithAsan = `../asan-mac-release/Chromium.app/Contents/MacOS/Chromium`
+	const executablePath = path.join(__dirname, pathToChromeWithAsan)
 	const launchOptions = {
 		// headless: false,
 		// slowMo: 250
